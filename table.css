@@ -1,0 +1,76 @@
+:root {
+  --form-control-color: #cb1ee8;
+}
+
+.dynamic-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dynamic-table {
+  justify-content: center;
+  align-self: center;
+  border-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  table-layout: fixed;
+
+  text-transform: capitalize;
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 10px;
+  user-select: none;
+}
+
+#dynamic-table td {
+  padding: 20px;
+}
+
+#dynamic-table th {
+  padding: 20px;
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--form-control-color);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-size-adjust: auto;
+  font-size: 2em;
+}
+
+#dynamic-table tr {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding: 20px;
+}
+
+#dynamic-table th {
+  background: #bfbfbf;
+}
+
+#dynamic-table tr:nth-child(even) {
+  background: #bfbfbf;
+}
+#dynamic-table tr:nth-child(odd) {
+  background: #92e3a9;
+}
+
+#nao-encontrado {
+  display: none;
+  position: relative;
+  color: rgb(255, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: auto;
+  padding-top: 20px;
+}
