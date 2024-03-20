@@ -23,7 +23,7 @@ function search() {
 }
 
 async function searchInBd(radio, text) {
-  const response = await fetch('http://127.0.0.1:3001/realizarConsulta', {
+  const response = await fetch('https://cute-cow-jumpsuit.cyclic.app/realizarConsulta', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
