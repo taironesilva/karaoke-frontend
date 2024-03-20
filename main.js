@@ -23,7 +23,7 @@ function search() {
 }
 
 async function searchInBd(radio, text) {
-  const response = await fetch('https://cute-cow-jumpsuit.cyclic.app/realizarConsulta', {
+  const response = await fetch('https://karaoke-backend.cyclic.app/realizarConsulta', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
