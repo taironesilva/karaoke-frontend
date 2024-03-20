@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 :root {
   --form-control-color: #cb1ee8;
 }
@@ -18,7 +21,7 @@
   table-layout: fixed;
 
   text-transform: capitalize;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -32,7 +35,7 @@
 
 #dynamic-table th {
   padding: 20px;
-  font-family: 'Lilita One', sans-serif;
+  font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--form-control-color);
@@ -43,7 +46,7 @@
 }
 
 #dynamic-table tr {
-  font-family: 'Lilita One', sans-serif;
+  font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -67,28 +70,27 @@
   color: rgb(255, 0, 0);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: red;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   margin: auto;
   padding-top: 20px;
 }
-
 
 @media only screen and (max-width: 400px) {
-#nao-encontrado {  
-  display: none;
-  position: relative;
-  color: rgb(255, 0, 0);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: red;
-  font-family: 'Inter', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin: auto;
-  padding-top: 20px;
-  font-size: 10px;
-}
+  #nao-encontrado {
+    display: none;
+    position: relative;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 10px;
+  }
 }
