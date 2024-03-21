@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
   --form-control-color: #cb1ee8;
@@ -21,10 +21,14 @@ header img {
   display: flex;
   justify-content: center;
   width: 100vw;
+  position: relative;
+  height: 50vh;
+  margin-top: 0;
+  padding: 0;
 }
 
 .span-h1 {
-  font-family: 'Lilita One', sans-serif;
+  font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--form-control-color);
@@ -45,14 +49,14 @@ header img {
   margin-block-end: 0px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-size: 10vw;
+  font-size: 5vw;
 }
 
 label {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -66,8 +70,9 @@ label {
 
 .input-search-area {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-items: center;
   padding-top: 15px;
   gap: 60px;
   padding-bottom: 15px;
@@ -84,7 +89,7 @@ label {
 
 .input-search {
   -webkit-text-stroke-color: black;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -96,13 +101,13 @@ label {
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-input[type='radio'] {
+input[type="radio"] {
   display: flex;
   flex-direction: row;
   width: 30px;
   height: 30px;
   appearance: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -114,8 +119,8 @@ input[type='radio'] {
   cursor: pointer;
 }
 
-input[type='radio']::before {
-  content: '';
+input[type="radio"]::before {
+  content: "";
   width: 0.75em;
   height: 0.75em;
   align-self: center;
@@ -126,12 +131,12 @@ input[type='radio']::before {
   box-shadow: inset 1em 1em var(--form-control-color);
 }
 
-input[type='radio']:checked::before {
+input[type="radio"]:checked::before {
   transform: scale(1);
 }
 
 .search-btn {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -156,7 +161,10 @@ input[type='radio']:checked::before {
 }
 
 .commands-btn {
-  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -167,14 +175,15 @@ input[type='radio']:checked::before {
   height: auto;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  font-size: 1vw;
+  font-size: 0.8vw;
   cursor: pointer;
   z-index: 99;
+  margin-right: 20vw;
 }
 
 footer {
   display: flex;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   -webkit-text-stroke-width: 1px;
@@ -189,43 +198,6 @@ footer img {
   padding-left: 5px;
   padding-right: 5px;
   user-select: none;
-}
-
-@media only screen and (min-width: 601px) {
-  header img {
-    display: block;
-    justify-content: center;
-    position: relative;
-    height: 50vh;
-    margin-top: 0;
-    padding: 0;
-  }
-  .input-search-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .commands-btn-area {
-    display: flex;
-    align-items: flex-end;
-  }
-  .input-search {
-    width: 510px;
-    height: 50px;
-  }
-
-  .span-h1 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 5vw;
-  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -301,7 +273,7 @@ footer img {
     height: 50px;
   }
   .commands-btn {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -319,7 +291,7 @@ footer img {
   }
   footer {
     display: flex;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     -webkit-text-stroke-width: 1px;
