@@ -17,13 +17,16 @@ body {
   box-sizing: border-box;
 }
 
-header img {
+header {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  position: relative;
-  height: 50vh;
-  margin-top: 0;
+  align-items: center;
+  user-select: none;
+}
+
+header img {
+  width: 50vw;
+  margin: 0;
   padding: 0;
 }
 
@@ -39,6 +42,7 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .span-h1 h1 {
@@ -202,9 +206,9 @@ footer img {
 
 @media only screen and (max-width: 950px) {
   header img {
-    display: block;
+    display: flex;
     justify-content: center;
-    position: relative;
+    width: 100vw;
     height: 50vh;
     margin-top: 0;
     padding: 0;
@@ -226,8 +230,9 @@ footer img {
 
 @media only screen and (max-width: 600px) {
   header {
-    display: block;
-    justify-content: start;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     height: 50vh;
     margin-top: 0;
     padding: 0;
@@ -251,8 +256,9 @@ footer img {
 
 @media only screen and (max-width: 400px) {
   header {
-    display: block;
-    justify-content: start;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     height: 50vh;
     margin-top: 0;
     padding: 0;
