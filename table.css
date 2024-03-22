@@ -77,3 +77,20 @@
   margin: auto;
   padding-top: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  #nao-encontrado {
+    display: none;
+    position: relative;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 10px;
+  }
+}
