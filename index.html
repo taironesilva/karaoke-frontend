@@ -11,81 +11,86 @@
   </head>
 
   <body>
-    <header>
-      <img src="header2.svg" alt="Imagem do header" />
-    </header>
+    <div class="container">
+      <header>
+        <img src="header2.svg" alt="Imagem do header" />
+      </header>
+      <hr />
+      <div class="title-area">
+        <div></div>
+        <h1>Karaokê do Tatá</h1>
+        <button class="commands-btn" onclick="modal()">
+          Comandos <br />
+          do <br />
+          Karaokê
+        </button>
+      </div>
 
-    <span class="span-h1">
-      <h1>Karaokê do Tatá</h1>
-    </span>
-    <span class="commands-btn-area">
-      <button class="commands-btn" onclick="modal()">
-        Comandos <br />
-        do <br />
-        Karaokê
-      </button>
-    </span>
-    <hr />
-    <span class="span-radio-btn">
-      <form method="post">
-        <label for="musica"
-          >Música <span style="padding: 5px"></span>
-          <input
-            class="radio-btn"
-            type="radio"
-            id="musica"
-            name="tipo_pesquisa"
-            value="musica"
-            checked
-          />
-        </label>
-        <label for="artista"
-          >Artista <span style="padding: 5px"></span>
-          <input
-            class="radio-btn"
-            type="radio"
-            id="artista"
-            name="tipo_pesquisa"
-            value="artista"
-          />
-        </label>
-      </form>
-    </span>
-    <span class="input-search-area">
-      <input
-        class="input-search"
-        type="text"
-        id="text_pesquisa"
-        name="text_pesquisa"
-        placeholder="Pesquisar..."
-        required
-      />
-      <button class="search-btn" onclick="search()">Pesquisar</button>
-    </span>
+      <div class="commands-area"></div>
 
-    <div class="dynamic-area">
-      <table id="dynamic-table"></table>
-      <h3 id="nao-encontrado" hidden>
-        Não foram encontrados registros para a sua consulta
-      </h3>
-    </div>
+      <hr />
 
-    <div id="modal">
-      <div class="modal-content">
-        <ul>
-          <li>VOL <strong>+</strong> = <strong>M</strong></li>
-          <li>VOL <strong>-</strong> = <strong>N</strong></li>
-          <li>CRÉDITO = <strong>P</strong></li>
-          <li>CRÉDITO GRÁTIS = <strong>D</strong></li>
-          <li>ZERAR CRÉDITOS = <strong>Z</strong></li>
-          <li>CANCELAR MÚSICA = <strong>Q</strong></li>
-          <li>LIMPAR DADOS = <strong>U</strong></li>
-          <li>PAUSAR = <strong>SPACE</strong></li>
-          <li>CONTADORES = <strong>F10</strong></li>
-          <li>CONFIRMAR = <strong>ENTER</strong></li>
-          <li>SAIR = <strong>ESC</strong></li>
-          <li>SETUP = <strong>E</strong></li>
-        </ul>
+      <span class="span-radio-btn">
+        <form method="post">
+          <label for="musica"
+            >Música <span style="padding: 5px"></span>
+            <input
+              class="radio-btn"
+              type="radio"
+              id="musica"
+              name="tipo_pesquisa"
+              value="musica"
+              checked
+            />
+          </label>
+          <label for="artista"
+            >Artista <span style="padding: 5px"></span>
+            <input
+              class="radio-btn"
+              type="radio"
+              id="artista"
+              name="tipo_pesquisa"
+              value="artista"
+            />
+          </label>
+        </form>
+      </span>
+      <span class="input-search-area">
+        <input
+          class="input-search"
+          type="text"
+          id="text_pesquisa"
+          name="text_pesquisa"
+          placeholder="Pesquisar..."
+          required
+        />
+        <button class="search-btn" onclick="search()">Pesquisar</button>
+      </span>
+
+      <div class="dynamic-area">
+        <table id="dynamic-table"></table>
+        <h3 id="nao-encontrado" hidden>
+          Não foram encontrados registros para a sua consulta
+        </h3>
+      </div>
+
+      <div id="modal">
+        <div class="modal-content">
+          <ul>
+            <li>VOL <strong>+</strong> = <strong>M</strong></li>
+            <li>VOL <strong>-</strong> = <strong>N</strong></li>
+            <li>CRÉDITO = <strong>P</strong></li>
+            <li>CRÉDITO GRÁTIS = <strong>D</strong></li>
+            <li>ZERAR CRÉDITOS = <strong>Z</strong></li>
+            <li>CANCELAR MÚSICA = <strong>Q</strong></li>
+            <li>LIMPAR DADOS = <strong>U</strong></li>
+            <li>PAUSAR = <strong>SPACE</strong></li>
+            <li>CONTADORES = <strong>F10</strong></li>
+            <li>CONFIRMAR = <strong>ENTER</strong></li>
+            <li>SAIR = <strong>ESC</strong></li>
+            <li>SETUP = <strong>E</strong></li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="main.js" defer></script>
