@@ -187,72 +187,23 @@ footer img {
 }
 
 @media (max-width: 820px) {
-  header nav {
-    display: none;
-  }
-  header .menu {
-    display: flex;
-  }
-  .hero .container {
-    flex-direction: column;
-  }
-  .hero .leftside {
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  .hero .rightside {
-    padding-bottom: 30px;
-  }
-  .hero .rightside img {
-    height: 300px;
-  }
-  .hero h1 {
-    font-size: 44px;
-    line-height: 50px;
-  }
-  .search {
-    padding-bottom: 30px;
-  }
-  .search .title {
-    text-align: center;
-  }
-  .search .sides {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .container {
+    width: 100%;
+    margin: auto;
+    max-width: 820px;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 500px) {
-  .search .title {
-    font-size: 30px;
-  }
-  .search input,
-  .search select {
+  .container {
     width: 100%;
-    background-color: var(--input);
-    color: var(--branco);
-    font-size: 16px;
-    outline: none;
-    padding: 20px;
-    border: 0;
-    border-radius: 5px;
-  }
-  .search input {
-    background-image: url("/assets/images/searchIcon.png");
-    background-repeat: no-repeat;
-    background-position: 20px center;
-    padding-left: 60px;
-  }
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-  footer .container {
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    margin: auto;
+    max-width: 500px;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
