@@ -39,7 +39,7 @@
   font-weight: 400;
   font-style: normal;
   color: var(--form-control-color);
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   -webkit-text-size-adjust: auto;
   font-size: 2em;
