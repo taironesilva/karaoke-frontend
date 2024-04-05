@@ -1,5 +1,6 @@
 const dynamicTable = document.getElementById("dynamic-table");
 let nao_encontrado = document.getElementById("nao-encontrado");
+let encontrado = document.getElementById("encontrado");
 
 function search() {
   let tipo_pesquisa = document.getElementsByName("tipo_pesquisa");
@@ -44,12 +45,15 @@ async function searchInBd(radio, text) {
   if (json.length == 0) {
     nao_encontrado.style.display = "block";
     dynamicTable.style.display = "none";
+    encontrado.style.display = "none";
     console.log("entrou no if");
   } else {
     console.log("entrou no else");
     nao_encontrado.style.display = "none";
     dynamicTable.style.display = "block";
     mountTable(json);
+    encontrado.style.display = "flex";
+    encontrado.innerHTML = `Encontrados ${json.length} registros`;
   }
 }
 
